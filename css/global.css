@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    border: 5px solid black;
+    height: 100%; 
+}
+
+header, nav, section, article, aside footer {
+    padding: 10px;
+    border: 5px solid black; 
+    text-align: center;
+}
+
+header, nav, footer {
+    width: 100%;
+}
+
+header {
+    background-color: #4d6ed7;
+    height: 12%; 
+    text-align: center;
+}
+
+nav {
+    background-color: #54bcc7;
+    height: 12%; 
+}
+
+footer {
+    background-color:#4d6ed7;
+    text-align: center;
+    height: 12%; 
+    border: 5px solid black;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main-content {
+    flex-direction: column;
+    width: 75%;
+    display: flex; 
+}
+
+section, article {
+    width: 100%;
+    flex-grow: 1; /*  determinar a proporção pela qual um elemento flexível deve crescer em relação aos outros elementos dentro do mesmo contêiner */
+}
+
+section {
+    background-color: #f6cd31;
+}
+
+article {
+    background-color: #e7795b;
+}
+
+aside {
+    width: 25%; 
+    background-color: white;
+    height: 50rem; 
+    border: 5px solid black;
+    color: black;
+    text-align: center;
+    writing-mode: vertical-lr; /* o texto escrito de cima para baixo */
+    transform: rotate(180deg); /* inverte a direção do texto para corresponder à imagem */
+}
